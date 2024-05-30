@@ -19,9 +19,9 @@ pub struct UserLogin {
     pub password: String
 }
 
-#[derive(serde::Serialize, serde::Deserialize)]
-pub struct LoginOutput {
-    pub Id: String,
-    LifeTime: u32,
-    StartedAt: String
-  }
+// #[derive(serde::Serialize, serde::Deserialize)]
+// pub struct LoginOutput {
+//     pub Id: String,
+//     LifeTime: u32,
+//     StartedAt: String
+//   }
