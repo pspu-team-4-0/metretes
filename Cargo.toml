@@ -1,0 +1,42 @@
+[package]
+name = "metretes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["ws", "macros", "multipart"] }
+sqlx = { version = "0.7.4", features = ["runtime-tokio", "postgres", "uuid", "time"] }
+anyhow = "1.0.81"
+axum-extra = { version = "0.9.3", features = ["typed-header"] }
+tower-http = { version = "0.5.2", features = [
+    "catch-panic",
+    "compression-full",
+    "sensitive-headers",
+    "timeout",
+    "trace",
+] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+futures = "0.3.30"
+tokio = { version = "1.37.0", features = ["full"] }
+headers = "0.4.0"
+dotenvy = "0.15.7"
+clap = { version = "4.5.4", features = ["derive", "env"] }
+clap_derive = "4.5.4"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_derive = "*"
+uuid = { version = "1.8.0", features = ["v4","v7", "serde"] }
+thiserror = "1.0.61"
+time = "0.3.36"
+async-trait = "0.1.80"
+jwt = "0.16.0"
+hmac = "0.12.1"
+sha2 = "0.10.8"
+rand = "0.8.5"
+argon2 = "0.5.3"
+serde_json = "1.0.115"
+tokio-util = "0.7.11"
+url = "2.5.0"
+rdkafka = "0.36.2"
+reqwest = { version = "0.12.4", features = ["multipart"] }
+axum-macros = "0.4.1"
